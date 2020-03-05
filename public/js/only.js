@@ -32,7 +32,7 @@ revform.addEventListener('submit', (e) =>
     e.preventDefault();
     let lons = document.getElementById('Glong').value;
     let lats = document.getElementById('Glat').value;
-    let url =`http://localhost:9000/getrgeo?latitude=${lats}&longitude=${lons}`
+    let url =`/getrgeo?latitude=${lats}&longitude=${lons}`
     fetch(url).then(res => res.json())
     .then((data) =>
     {
@@ -53,7 +53,7 @@ weatherform.addEventListener('submit',(e) =>
     getadd = document.getElementById('wb').value;
     getinfo = document.getElementById('ex').value;
 
-  let url = `http://localhost:9000/getweather?address=${getadd}`
+  let url = `/getweather?address=${getadd}`
   fetch(url).then(res => res.json())
   .then((data) =>
   {
