@@ -75,17 +75,17 @@
              Welcome to our Forward Geocoding Services 
             </p>
 
-                 <form>
+                 <form id="k">
   <div class="form-group">
     <label for="formGroupExampleInput">Address</label>
-  <input class="form-control form-control-lg" type="text"  required>
+  <input id="kk" class="form-control form-control-lg" type="text"  required>
       <small id="emailHelp" class="form-text text-muted">Type a location to get it's longitude and latitude</small>
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<h2>Longitude:  <span class="badge badge-secondary" id="lon"></span></h2>
-<h2>Latitude:   <span class="badge badge-secondary" id="lat"></span></h2>
+<h2 id="longhead"></h2>
+<h2 id="lathead"> </h2>
 
 
 
@@ -110,16 +110,16 @@
           <div class="sub-heading">
             <p>
               Welcome to our Weather Services             </p>
-                               <form>
+                               <form id="wa"> 
   <div class="form-group">
     <label for="formGroupExampleInput">Address</label>
-  <input class="form-control form-control-lg" type="text" required>
+  <input class="form-control form-control-lg" type="text" id="wb" required>
       <small id="emailHelp" class="form-text text-muted">Type a location to get it's Weather</small>
   </div>
   
   <div class="form-group">
     <label for="exampleFormControlSelect1">Details</label>
-    <select class="form-control" id="exampleFormControlSelect1" >
+    <select class="form-control" id="ex" >
       <option>currently</option>
       <option>minutely</option>
       <option>hourly</option>
@@ -129,8 +129,8 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<h2><span class="badge badge-secondary" id="lon">L </span></h2>
-<h2>Summary:  <span class="badge badge-secondary" id="lat">Rain</span></h2>
+<h2><span class="badge badge-secondary" id="wq"> </span></h2>
+<h2> <span class="badge badge-secondary" id="ww"></span></h2>
 
           </div>
         </div>
@@ -153,16 +153,16 @@
                 Welcome to our Reverse Geocoding Services 
             </p>
 
-             <form>
+             <form id="hmm">
   <div class="form-group">
     <label for="formGroupExampleInput">Longitude</label>
-  <input class="form-control form-control-lg" type="text" required>
+  <input class="form-control form-control-lg" type="text" id="Glong" required>
   
   </div>
 
   <div class="form-group">
     <label for="formGroupExampleInput">Latitude</label>
-  <input class="form-control form-control-lg" type="text" required>
+  <input class="form-control form-control-lg" type="text" id="Glat" required>
       
   </div>
   
@@ -170,7 +170,7 @@
 </form>
 
 
-<h2>Address:  <span class="badge badge-secondary" id="lon"></span></h2>
+<h2 id="show"></h2>
 
 
 
@@ -224,6 +224,7 @@
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
 
   <!-- Javascript Library Files -->
+  
   <script src="/js/jquery.min.js"></script>
   <script src="/js/jquery.easing.js"></script>
   <script src="/js/bootstrap.js"></script>
@@ -236,9 +237,10 @@
   <script src="/js/hover/jquery-hover-effect.js"></script>
   <script src="/js/jquery.scrollTo.min.js"></script>
   <script src="/js/animate.js"></script>
+  <script src="/js/only.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+
 
   <!-- Template Custom Javascript File -->
   <script src="/js/custom.js"></script>

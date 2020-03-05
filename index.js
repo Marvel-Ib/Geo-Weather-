@@ -5,24 +5,22 @@ const port = 9000 || process.env.PORT
 const app = express();
 const bodyparser  = require('body-parser');
 
+
+const control = require('./controllers/onecontrol') 
+
 app.use(express.static(__dirname + '/public'))
 
 app.set('view engine','hbs');
 app.set('views','views')
 
-app.get('/',(req,res) =>
-{
-    res.render('all',{
-        title:"Geo-Weather"
-    })
-})
+app.get('/', control.main)
 
-app.use((req,res) =>
-{
-    res.render('404',{
-        title:"Error"
-    });
-})
+
+app.get('/getfgeo',control.fgeoo);
+app.get('/getrgeo',control.rgeoo);
+app.get('/getweather',control.gweather);
+
+app.use(control.error)
 
 
 app.listen(port)
