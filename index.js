@@ -8,6 +8,7 @@ const bodyparser  = require('body-parser');
 
 
 
+
 const control = require('./controllers/onecontrol') 
 
 app.use(express.static(__dirname + '/public'))
