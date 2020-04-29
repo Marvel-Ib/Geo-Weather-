@@ -4,6 +4,8 @@ const hbs = require('hbs')
 const app = express();
 const bodyparser  = require('body-parser');
 
+require('dotenv').config()
+
 
 
 
