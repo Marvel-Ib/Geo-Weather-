@@ -7,7 +7,7 @@ Node app deployed and ran on Glitch
 
 ### Click the link below to view the live-app
 
-# [marvel-geo-weather](https://melodic-delightful-tugboat.glitch.me)
+# [marvel-geo-weather](https://marvel-weather-app.herokuapp.com/)
 
 
 # Usage
